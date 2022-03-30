@@ -1,0 +1,11 @@
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\bin\Debug\simpleLogin.exe.config
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\bin\Debug\simpleLogin.exe
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\bin\Debug\simpleLogin.pdb
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.csprojAssemblyReference.cache
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.SplashScreen.resources
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.Login.resources
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.Properties.Resources.resources
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.csproj.GenerateResource.cache
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.csproj.CoreCompileInputs.cache
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.exe
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.pdb
