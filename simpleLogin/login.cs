@@ -41,5 +41,55 @@ namespace simpleLogin
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+
+            //QUEMADO
+            String user = "andres@mail.com";
+            String pass = "123456";
+
+            //OBTENGO los datos
+            String userName = "";
+            String password = "";
+            try
+            { 
+                userName = txtUsername.Text.ToString();
+                password = txtPasswork.Text.ToString();
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("ERROR :: DATOS NULOS");
+            }
+            catch (InvalidCastException)
+            {
+                Console.WriteLine("ERROR :: Casting ");
+            }
+
+            //VALIDAR datos
+            if(userName.Length > 0)
+            {
+                if(userName == user)
+                {
+                    if(password == pass)
+                    {
+                        Console.WriteLine("Login successful");
+                    }
+                }
+                Console.WriteLine("Invalid Credentials!");
+            }
+
+
+        }
     }
 }

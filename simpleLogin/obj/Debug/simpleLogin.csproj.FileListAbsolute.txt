@@ -9,3 +9,4 @@ C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.csproj.
 C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.csproj.CoreCompileInputs.cache
 C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.exe
 C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.pdb
+C:\Users\SENA\source\repos\simpleLogin\simpleLogin\obj\Debug\simpleLogin.register.resources
