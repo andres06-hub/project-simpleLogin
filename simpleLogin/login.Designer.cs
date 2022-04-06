@@ -89,12 +89,12 @@ namespace simpleLogin
             // 
             this.txtPasswork.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPasswork.Font = new System.Drawing.Font("Wingdings", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.txtPasswork.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.txtPasswork.Location = new System.Drawing.Point(3, 70);
             this.txtPasswork.Name = "txtPasswork";
-            this.txtPasswork.Size = new System.Drawing.Size(278, 24);
+            this.txtPasswork.PasswordChar = 'n';
+            this.txtPasswork.Size = new System.Drawing.Size(278, 19);
             this.txtPasswork.TabIndex = 1;
-            this.txtPasswork.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblUsername
             // 

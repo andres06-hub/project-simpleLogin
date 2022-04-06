@@ -18,10 +18,7 @@ namespace simpleLogin
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -95,10 +92,6 @@ namespace simpleLogin
                 this.Hide();
                 //Show Windows Register
                 showRegister();
-            }
-            else
-            {
-                //False
             }
         }
 
