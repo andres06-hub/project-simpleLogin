@@ -1,7 +1,7 @@
 ﻿
 namespace simpleLogin
 {
-    partial class register
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@ namespace simpleLogin
             this.Name = "register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.register_Load);
             this.ResumeLayout(false);
 
         }

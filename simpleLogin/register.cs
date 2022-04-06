@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace simpleLogin
 {
-    public partial class register : Form
+    public partial class Register : Form
     {
-        public register()
+        public Register()
         {
             InitializeComponent();
+        }
+
+        private void register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
