@@ -93,6 +93,7 @@ namespace simpleLogin
                 //Show Windows Register
                 showRegister();
             }
+
         }
 
 
@@ -100,7 +101,7 @@ namespace simpleLogin
         {
 
             //QUEMADO
-            String user = "andres@mail.com";
+            String user = "andres@gmail.com";
             String pass = "123456";
 
             String message = "";
@@ -151,6 +152,7 @@ namespace simpleLogin
             return listResulst;
         }
 
+        //Imprimir los datos
         private void showRegister()
         {
             //Instanciamos la clase

@@ -31,5 +31,89 @@ namespace simpleLogin
         {
 
         }
+
+        private void lblCantiHijos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            //Manejar errores, Provider
+            //NameEmpleado
+            nameEmpleadoErrorProvider = new System.Windows.Forms.ErrorProvider();
+            nameEmpleadoErrorProvider.SetIconAlignment(this.textBoxNameEmple, ErrorIconAlignment.MiddleRight);
+            nameEmpleadoErrorProvider.SetIconPadding(this.textBoxNameEmple, 2);
+            nameEmpleadoErrorProvider.BlinkRate = 1000;
+            nameEmpleadoErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
+
+            //Cantidad Hijos
+            cantidadHijosErrorProvider = new System.Windows.Forms.ErrorProvider();
+            cantidadHijosErrorProvider.SetIconAlignment(this.textBoxCantiHijos, ErrorIconAlignment.MiddleRight);
+            cantidadHijosErrorProvider.SetIconPadding(this.textBoxCantiHijos, 2);
+            cantidadHijosErrorProvider.BlinkRate = 100;
+            cantidadHijosErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.BlinkIfDifferentError;
+
+            //Sueldo basico
+            sueldoBasicoErrorProvider = new System.Windows.Forms.ErrorProvider();
+            sueldoBasicoErrorProvider.SetIconAlignment(this.textBoxSueldoBasic, ErrorIconAlignment.MiddleRight);
+            sueldoBasicoErrorProvider.SetIconPadding(this.textBoxSueldoBasic, 2);
+            sueldoBasicoErrorProvider.BlinkRate = 1000;
+            sueldoBasicoErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+
+
+            //Obtenemos los datos
+
+            if ((!isNameValid()))
+            {
+                //si no es valido
+                nameEmpleadoErrorProvider.SetError(textBoxNameEmple, "ERROR Name");
+            }
+            else if(!isAmountSonsValid())
+            {
+                //Si no es valido
+                cantidadHijosErrorProvider.SetError(textBoxCantiHijos, "ERROR Amount");
+            }
+            else if (!isSalaryValid())
+            {
+                //si no es valido
+                sueldoBasicoErrorProvider.SetError(textBoxSueldoBasic, "ERROR salary");
+            }
+            else
+            {
+
+            }
+        }
+
+        //GET and VALIDATED data
+        private Boolean isNameValid()
+        {
+            String nombreEmpleado = textBoxNameEmple.Text;
+            if (!(nombreEmpleado.Length > 0))
+            {
+                return false;
+            }
+            return true;
+        }
+        private Boolean isAmountSonsValid()
+        {
+            //Creamos la vaiable de referencia
+            int num;
+            //Tratamos
+            return int.TryParse(textBoxCantiHijos.Text, out num);
+        }
+        private Boolean isSalaryValid()
+        {
+            //creamos variable de referencia
+            double salary;
+            //Tratamos
+            return double.TryParse(textBoxSueldoBasic.Text, out salary);
+        }
+
     }
 }
